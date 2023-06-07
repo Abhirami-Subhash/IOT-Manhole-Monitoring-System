@@ -1,0 +1,30 @@
+.mainContainer {
+  height: 100vh;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 0 150px;
+}
+
+.detailsContainer{
+  width: 560px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.dashboardContainer {
+	display: flex;
+  flex-direction: column;
+  width: 640px
+}
+
+.dashboardSection {
+  display: flex;
+  justify-content: center;
+}

@@ -1,34 +1,35 @@
 .background {
 	background: #f6f6fb;
-	border-radius: 24px;
-	width: 195px;
-	height: 143px;
+	border-radius: 32px;
+	width: 260px;
+	height: 190px;
+	margin: 20px;
 }
 
 .title {
-	font-size: 26px;
+	font-size: 35px;
 	font-weight: 700;
 	color: #7166f9;
 	margin: 0;
-	padding-top: 19px;
-	padding-left: 38px;
+	padding-top: 25px;
+	padding-left: 50px;
 }
 
 .value {
-	font-size: 38px;
+	font-size: 50px;
 	font-weight: 500;
 	margin: 0;
 }
 
 .labelDiv {
-	padding-top: 13px;
-	padding-left: 19px;
+	padding-top: 17px;
+	padding-left: 25px;
 }
 
 .label {
-	font-size: 11px;
+	font-size: 15px;
 	font-weight: 400;
 	margin: 0;
-	padding-top: 4.5px;
-	padding-left: 24px;
+	padding-top: 6px;
+	padding-left: 32px;
 }

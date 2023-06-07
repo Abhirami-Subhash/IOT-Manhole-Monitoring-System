@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
+import styles from "./App.module.css";
 import Card from "./components/card";
 
 function App() {
@@ -55,11 +56,30 @@ function App() {
 	useEffect(valueUpdateEffect, []);
 
 	return (
-		<div>
-			<Card label="Ammonia Concentration" value={ammoniaConcentration} unit="ppm"/>
-			<Card label="Distance" value={distance} unit="cm"/>
-			<Card label="Methane Concentration" value={methaneConcentration} unit="ppm"/>
-			<Card label="Tilt" value={tilt}/>
+		<div className={styles.mainContainer}>
+			<div className={styles.detailsContainer}>
+				<div className={styles.title}>
+					IOT - Manhole Monitoring System
+				</div>
+			</div>
+			<div className={styles.dashboardContainer}>
+				<div className={styles.dashboardSection}>
+					<Card
+						label="Ammonia Concentration"
+						value={ammoniaConcentration}
+						unit="ppm"
+					/>
+					<Card label="Distance" value={distance} unit="cm" />
+				</div>
+				<div className={styles.dashboardSection}>
+					<Card
+						label="Methane Concentration"
+						value={methaneConcentration}
+						unit="ppm"
+					/>
+					<Card label="Tilt" value={tilt} />
+				</div>
+			</div>
 		</div>
 	);
 }
