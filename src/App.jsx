@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
+import Card from "./components/card";
 
 function App() {
 	const [ammoniaConcentration, setAmmoniaConcentration] = useState(0);
@@ -55,22 +56,10 @@ function App() {
 
 	return (
 		<div>
-			<div>
-				<span>Ammonia Concentration: </span>
-				<span>{ammoniaConcentration}</span>
-			</div>
-			<div>
-				<span>Distance: </span>
-				<span>{distance}</span>
-			</div>
-			<div>
-				<span>Methane Concentration: </span>
-				<span>{methaneConcentration}</span>
-			</div>
-			<div>
-				<span>Tilt: </span>
-				<span>{tilt}</span>
-			</div>
+			<Card label="Ammonia Concentration" value={ammoniaConcentration} unit="ppm"/>
+			<Card label="Distance" value={distance} unit="cm"/>
+			<Card label="Methane Concentration" value={methaneConcentration} unit="ppm"/>
+			<Card label="Tilt" value={tilt}/>
 		</div>
 	);
 }
