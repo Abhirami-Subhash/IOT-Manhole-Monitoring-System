@@ -68,16 +68,23 @@ function App() {
 						label="Ammonia Concentration"
 						value={ammoniaConcentration}
 						unit="ppm"
+						threshold={350}
 					/>
-					<Card label="Distance" value={distance} unit="cm" />
+					<Card
+						label="Distance"
+						value={distance}
+						unit="cm"
+						threshold={20}
+					/>
 				</div>
 				<div className={styles.dashboardSection}>
 					<Card
 						label="Methane Concentration"
 						value={methaneConcentration}
 						unit="ppm"
+						threshold={350}
 					/>
-					<Card label="Tilt" value={tilt} />
+					<Card label="Tilt" value={tilt} threshold={1} />
 				</div>
 			</div>
 		</div>

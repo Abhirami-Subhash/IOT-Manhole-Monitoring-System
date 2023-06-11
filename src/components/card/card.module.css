@@ -21,6 +21,10 @@
 	margin: 0;
 }
 
+.error {
+	color: red;
+}
+
 .labelDiv {
 	padding-top: 17px;
 	padding-left: 25px;
